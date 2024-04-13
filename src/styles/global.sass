@@ -1,0 +1,49 @@
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  &:focus
+    outline: none
+
+html, body
+  -ms-overflow-style: none
+  scrollbar-width: none
+
+button, input
+  box-shadow: none
+  border: none
+  background: none
+  appearance: none
+  outline: none
+  white-space: nowrap
+  border-radius: 0
+
+a
+  color: inherit
+  cursor: pointer
+  text-decoration: none
+
+html
+  @media(max-width: 1600px)
+    font-size: calc(100vw / 1440)
+  @media(max-width: 1024px)
+    font-size: calc(100vw / 1024)
+  @media(max-width: 590px)
+    font-size: calc(100vw / 375)
+
+body
+  max-width: 1200px
+  margin: 0 auto
+  padding: 20px
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  @media(max-width: 590px)
+    min-height: 100svh
+
+.img-wrapper
+  display: flex
+  img
+    object-fit: cover
+    width: 100%
+    height: auto
