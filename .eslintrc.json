@@ -23,7 +23,8 @@
         "jsxSingleQuote": true,
         "singleQuote": true,
         "arrowParens": "avoid",
-        "trailingComma": "none"
+        "trailingComma": "none",
+        "endOfLine": "auto"
       }
     ],
     "react/react-in-jsx-scope": "off",
