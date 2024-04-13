@@ -40,6 +40,16 @@
 				"ignoreFunctionalComponents": true
 			}
 		],
-		"react/prop-types": "off"
+		"react/prop-types": "off",
+		"jsx-a11y/alt-text": [
+			2,
+			{
+				"elements": ["img", "object", "area", "input[type=\"image\"]"],
+				"img": ["Image"],
+				"object": ["Object"],
+				"area": ["Area"],
+				"input[type=\"image\"]": ["InputImage"]
+			}
+		]
 	}
 }
