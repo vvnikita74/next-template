@@ -11,5 +11,5 @@
 	"bracketSpacing": true,
 	"bracketSameLine": false,
 	"cssEnable": ["sass", "scss", "css"],
-	"printWidth": 85
+	"printWidth": 90
 }
