@@ -9,5 +9,7 @@
 	"endOfLine": "auto",
 	"jsxBracketSameLine": true,
 	"bracketSpacing": true,
-	"bracketSameLine": false
+	"bracketSameLine": false,
+	"cssEnable": ["sass", "scss", "css"],
+	"printWidth": 85
 }
