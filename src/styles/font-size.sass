@@ -1,8 +1,8 @@
-@mixin responsiveFont ($default_size, $notebook_size, $tablet_size, $mobile_size)
-  font-size: $default_size
-  @media(max-width: 1600px)
-    font-size: $notebook_size
-  @media(max-width: 1024px)
-    font-size: $tablet_size
-  @media(max-width: 590px)
-    font-size: $mobile_size
+@mixin responsiveProperty($property, $default_value, $notebook_value, $tablet_value, $mobile_value)
+  #{$property}: $default_value
+  @media (max-width: 1440px)
+    #{$property}: $notebook_value
+  @media (max-width: 1024px)
+    #{$property}: $tablet_value
+  @media (max-width: 590px)
+    #{$property}: $mobile_value

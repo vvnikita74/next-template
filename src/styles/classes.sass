@@ -112,7 +112,6 @@
   height: -moz-fit-content
   height: fit-content
 
-
 // If there is a vertical indentation, subtract
 .h-screen
   height: 100vh
@@ -182,3 +181,29 @@
   scrollbar-width: none
   &::-webkit-scrollbar
     display: none
+
+.full-screen-wrapper
+  width: 100vw
+  height: 100%
+  position: relative
+  left: 50%
+  right: 50%
+  margin-left: -50vw
+  margin-right: -50vw
+  overflow: hidden 
+
+.abs-fill
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.img-wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    object-fit: cover
+    width: 100%
+    height: auto
