@@ -1,6 +1,5 @@
 # Next.js template project
 
-- Atomic structure
-- SASS preprocessor
-- Some of the most used base classes for positioning, dimensions
+- Tailwind CSS
+- Optimized and flexible utls
 - ESLint, Prettier configs for code styling
