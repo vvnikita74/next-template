@@ -1,8 +1,0 @@
-@mixin responsiveProperty($property, $default_value, $notebook_value, $tablet_value, $mobile_value)
-  #{$property}: $default_value
-  @media (max-width: 1440px)
-    #{$property}: $notebook_value
-  @media (max-width: 1024px)
-    #{$property}: $tablet_value
-  @media (max-width: 590px)
-    #{$property}: $mobile_value
