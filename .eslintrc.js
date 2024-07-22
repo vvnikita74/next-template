@@ -28,7 +28,17 @@ export default [
 			'prettier/prettier': ['error', { endOfLine: 'auto' }],
 			'react/react-in-jsx-scope': 'off',
 			'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-			'tailwindcss/classnames-order': 'warn'
+			'tailwindcss/classnames-order': 'warn',
+			'jsx-a11y/alt-text': [
+				2,
+				{
+					elements: ['img', 'object', 'area', 'input[type="image"]'],
+					img: ['Image'],
+					object: ['Object'],
+					area: ['Area'],
+					'input[type="image"]': ['InputImage']
+				}
+			]
 		}
 	},
 	{

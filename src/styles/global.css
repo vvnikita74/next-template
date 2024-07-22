@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+	.decoration-skip-ink-none {
+		text-decoration-skip-ink: none;
+	}
+}
+
+body {
+	/* max-width: 1200px; */
+	/* margin: 0 auto; */
+	/* padding: 0px 20px; */
+}
+
+/* @media (max-width: 320px) {
+	body {
+		padding: 0px 10px;
+	}
+} */
