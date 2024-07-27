@@ -18,3 +18,20 @@
 		scrollbar-width: none; /* Firefox */
 	}
 }
+
+.hidden-opacity {
+	z-index: -1;
+	pointer-events: none;
+	opacity: 0;
+	transition:
+		opacity 0.3s,
+		z-index 0.3s 0.3s;
+	&.opened {
+		opacity: 1;
+		@apply z-20;
+		pointer-events: unset;
+		transition:
+			opacity 0.3s,
+			z-index 0s;
+	}
+}
