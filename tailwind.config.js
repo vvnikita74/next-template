@@ -4,14 +4,11 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
 	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
 	theme: {
-		extend: {},
+		extend: {}
 	},
 	plugins: [
-		plugin(function ({ addVariant }) {
+		plugin(function extend({ addVariant }) {
 			addVariant('from-second', '&:nth-child(n+2)')
-			addVariant('from-third', '&:nth-child(n+3)')
-			addVariant('from-fourth', '&:nth-child(n+4)')
-			addVariant('second-col-el', '&:nth-child(3n+2)')
 		})
 	]
 }
