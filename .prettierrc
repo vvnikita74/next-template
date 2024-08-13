@@ -11,5 +11,6 @@
 	"bracketSpacing": true,
 	"bracketSameLine": false,
 	"cssEnable": ["sass", "scss", "css"],
-	"printWidth": 90
+	"printWidth": 85,
+	"plugins": ["prettier-plugin-tailwindcss"]
 }
