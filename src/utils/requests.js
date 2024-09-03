@@ -28,5 +28,3 @@ export default async function getContent(path, settings) {
 		return null
 	}
 }
-
-// TODO: implement the graphQL requests
