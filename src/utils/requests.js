@@ -15,7 +15,7 @@ export default async function getContent(
 ) {
 	try {
 		const request = await fetch(
-			`${process.env.API_URL}/${path}?${settings.params || ''}`,
+			`${process.env.API_URL}/${path}?${settings?.params || ''}`,
 			{
 				headers: {
 					Authorization: `Bearer ${process.env.API_KEY}`
