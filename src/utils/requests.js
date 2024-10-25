@@ -1,31 +1,30 @@
 /**
  * Fetches data from Strapi.
  *
- * @param {string} path - API ID for the Collection or Single type.
- * @param {Object} settings - Request settings.
- * @param {Object} [settings.params] - Request parameters.
- * @param {boolean} [settings.isSingle] - Whether the request is for a single type.
- * @param {Object} [settings.revalidateParams] - Revalidation parameters for the request.
- * @returns {Promise<Object|null>} - A promise that resolves to the fetched data or null if an error occurs.
+ * @param {string} path - API ID for the collection or single type.
+ * @param {string} [params] - request parameters.
+ * @param {object} [revalidateParams] - revalidation parameters for the request.
+ * @returns {object|null} promise that resolves to the fetched data or null if an error occurs.
  */
 
 export default async function getContent(
 	path = '',
-	settings = {}
+	params = '',
+	revalidateParams = {}
 ) {
 	try {
-		const request = await fetch(
-			`${process.env.API_URL}/${path}?${settings?.params || ''}`,
+		const req = await fetch(
+			`${process.env.API_URL}/${path}?${params || ''}`,
 			{
 				headers: {
 					Authorization: `Bearer ${process.env.API_KEY}`
 				},
-				next: settings?.revalidateParams
+				next: revalidateParams
 			}
 		)
 
-		const data = request.json()
-		return data.data ? data.data : data
+		const res = await req.json()
+		return res.data ? res.data : res
 	} catch (error) {
 		return null
 	}
