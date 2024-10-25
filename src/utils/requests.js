@@ -24,8 +24,8 @@ export default async function getContent(
 			}
 		)
 
-		// TODO: test returning a json() method
-		return request.json()
+		const data = request.json()
+		return data.data ? data.data : data
 	} catch (error) {
 		return null
 	}
