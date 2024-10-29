@@ -49,7 +49,9 @@
 				"area": ["Area"],
 				"input[type=\"image\"]": ["InputImage"]
 			}
-		]
+		],
+		"react/jsx-props-no-spreading": "off",
+		"react/no-danger": "off"
 	},
 	"settings": {
 		"react": {
