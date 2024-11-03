@@ -1,4 +1,4 @@
-import { revalidateTime } from "@/utils/config"
+import { revalidateTime } from '@/utils/config'
 
 export const revalidate = revalidateTime
 
