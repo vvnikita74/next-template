@@ -1,5 +1,3 @@
-'use server'
-
 /**
  * Formats the given text by inserting non-breaking spaces after certain prepositions and numbers.
  * This helps in maintaining proper text flow and prevents unwanted line breaks.

@@ -1,5 +1,3 @@
-'use server'
-
 /**
  * Sends a message to a specified Telegram chat using the Telegram Bot API.
  *

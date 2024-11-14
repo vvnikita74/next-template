@@ -1,5 +1,3 @@
-'use server'
-
 /**
  * Fetches data from Strapi.
  *
