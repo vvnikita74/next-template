@@ -8,9 +8,10 @@
 		"plugin:import/errors",
 		"plugin:import/warnings",
 		"plugin:prettier/recommended",
-		"next"
+		"next",
+		"next/core-web-vitals"
 	],
-	"plugins": ["react", "jsx-a11y", "import", "prettier", "unicorn"],
+	"plugins": ["react", "jsx-a11y", "import", "prettier", "tailwindcss", "unicorn"],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true

@@ -3,13 +3,13 @@
  *
  * @param {string} path - API ID for the collection or single type.
  * @param {string} [params] - request parameters.
- * @param {object} [revalidateParams] - revalidation parameters for the request.
+ * @param {object} [next] - Next fetch parameters for the request.
  * @returns {object|null} promise that resolves to the fetched data or null if an error occurs.
  */
 export default async function getContent(
 	path = '',
 	params = '',
-	revalidateParams = {}
+	next = {}
 ) {
 	try {
 		const req = await fetch(
@@ -18,7 +18,7 @@ export default async function getContent(
 				headers: {
 					Authorization: `Bearer ${process.env.API_KEY}`
 				},
-				next: revalidateParams
+				next
 			}
 		)
 

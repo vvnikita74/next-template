@@ -13,7 +13,7 @@
 		"prettier:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css)\""
 	},
 	"dependencies": {
-		"next": "^14.2.16",
+		"next": "^14.2.18",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"sharp": "^0.33.5"
