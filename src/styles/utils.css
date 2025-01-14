@@ -1,16 +1,24 @@
 .hidden-opacity {
-	z-index: -1;
-	pointer-events: none;
+  pointer-events: none;
+  opacity: 0;
 	visibility: hidden;
+	z-index: -1;
 	transition:
-		visibility 0.3s 0.3s,
-		z-index 0.3s 0.3s;
+		opacity var(--tr-duration, 0.3s),
+		visibility var(--tr-duration, 0.3s) var(--tr-duration, 0.3s),
+    		pointer-events var(--tr-duration, 0.3s) var(--tr-duration, 0.3s),
+		z-index var(--tr-duration, 0.3s) var(--tr-duration, 0.3s);
+  		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	&.opened {
-		z-index: var(--z-index, 20);
-		pointer-events: unset;
+		opacity: 100;
+		z-index: var(--z-index, 50);
+		pointer-events: auto;
+		visibility: visible;
 		transition:
-			visibility 0s,
-			z-index 0s;
+			opacity var(--tr-duration, 0.3s),
+			z-index 0s,
+			pointer-events 0s,
+			visibility 0s;
 	}
 }
 
