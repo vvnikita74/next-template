@@ -5,7 +5,7 @@
 
 ### **✨ Особенности**  
 - **Next.js 15** с App Router и Server Actions  
-- **Tailwind CSS 3.3** с кастомными утилитами и плагинами  
+- **Tailwind CSS 4.0** с кастомными утилитами и плагинами  
 - **PostCSS** с полным стеком оптимизаций:  
   ```bash
   tailwindcss | autoprefixer | postcss-flexbugs-fixes | cssnano
