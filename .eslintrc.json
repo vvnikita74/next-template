@@ -1,73 +1,66 @@
 {
-	"extends": [
-		"airbnb",
-		"airbnb/hooks",
-		"plugin:react/recommended",
-		"plugin:react-hooks/recommended",
-		"plugin:jsx-a11y/recommended",
-		"plugin:import/errors",
-		"plugin:import/warnings",
-		"plugin:prettier/recommended",
-		"next",
-		"next/core-web-vitals"
-	],
-	"plugins": ["react", "jsx-a11y", "import", "prettier", "tailwindcss", "unicorn"],
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		}
-	},
-	"rules": {
-		"react/react-in-jsx-scope": "off",
-		"prettier/prettier": [
-			"warn",
-			{
-				"tabWidth": 2,
-				"useTabs": true,
-				"semi": false,
-				"jsxSingleQuote": true,
-				"singleQuote": true,
-				"arrowParens": "avoid",
-				"trailingComma": "none",
-				"endOfLine": "auto",
-				"jsxBracketSameLine": true,
-				"bracketSpacing": true,
-				"bracketSameLine": false,
-				"printWidth": 65,
-				"plugins": [
-					"prettier-plugin-tailwindcss",
-					"prettier-plugin-classnames",
-					"prettier-plugin-merge"
-				]
-			}
-		],
-		"jsx-a11y/alt-text": [
-			"error",
-			{
-				"elements": ["img", "object", "area", "input[type=\"image\"]"],
-				"img": ["Image"],
-				"object": ["Object"],
-				"area": ["Area"],
-				"input[type=\"image\"]": ["InputImage"]
-			}
-		],
-		"react/jsx-props-no-spreading": "off",
-		"react/no-danger": "off"
-	},
-	"settings": {
-		"react": {
-			"version": "detect"
-		},
-		"import/resolver": {
-			"alias": {
-				"map": [["@", "./src"]],
-				"extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
-			},
-			"node": {
-				"extensions": [".js", ".jsx", ".ts", ".tsx"],
-				"moduleDirectory": ["node_modules", "src/"],
-				"paths": ["src"]
-			}
-		}
-	}
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2024": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "prettier/prettier": [
+      "warn",
+      {
+        "tabWidth": 2,
+        "useTabs": true,
+        "semi": false,
+        "jsxSingleQuote": true,
+        "singleQuote": true,
+        "arrowParens": "avoid",
+        "trailingComma": "none",
+        "endOfLine": "auto",
+        "jsxBracketSameLine": true,
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "printWidth": 65,
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "19"
+    }
+  },
+  "ignorePatterns": ["!src/**/*"],
+  "overrides": [
+    {
+      "files": ["src/**/*.{js,jsx,ts,tsx}"],
+      "excludedFiles": ["*.config.js"]
+    }
+  ]
 }

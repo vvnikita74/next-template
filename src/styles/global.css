@@ -1,16 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Base element styles */
-/* @layer base {
+@layer base {
   button {
     @apply px-3 py-4 rounded-lg bg-black text-white;
   }
   input {
     @apply px-3 py-2 outline-none bg-transparent border-b border-black placeholder:text-inherit placeholder:opacity-50
   }
-} */
+}
 
 @layer utilities {
   .decoration-skip-ink-none {
