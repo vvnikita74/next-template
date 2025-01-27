@@ -10,11 +10,6 @@
   ```bash
   tailwindcss | autoprefixer | postcss-flexbugs-fixes | cssnano
   ```
-- Готовые решения:  
-  - Адаптивная grid-система  
-  - Миксины для медиа-запросов  
-  - Оптимизированные `next/image` пресеты  
-  - Глобальные CSS-переменные  
 - **SVGR** для иконок (Webpack-интеграция)  
 - **ESLint** + **Prettier** с "железными" правилами  
 - Поддержка **TypeScript 5.3** из коробки  
