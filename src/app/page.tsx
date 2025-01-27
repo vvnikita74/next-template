@@ -5,7 +5,7 @@ export const revalidate = revalidateTime
 
 export default function HomePage() {
 	return (
-		<div className='p-4'>
+		<div className='container p-4'>
 			<h1 className='text-4xl font-bold'>Next.js 15 Template</h1>
 			<ul className='mt-4 list-inside list-disc text-lg'>
 				<li>TailwindCSS 4.0</li>

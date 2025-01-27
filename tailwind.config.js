@@ -1,5 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-/* eslint-disable import/no-extraneous-dependencies */
 
 /** @type {import('tailwindcss').Config} */
 
@@ -15,6 +14,9 @@ export default {
 				...defaultTheme.screens
 			}
 		}
+	},
+	corePlugins: {
+		container: false
 	},
 	plugins: []
 }

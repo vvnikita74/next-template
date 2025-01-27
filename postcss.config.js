@@ -1,7 +1,7 @@
 module.exports = {
 	plugins: {
 		'@tailwindcss/postcss': {},
-		autoprefixer: {},
+		autoprefixer: { grid: true },
 		'postcss-flexbugs-fixes': {},
 		cssnano: {},
 		'postcss-preset-env': {
