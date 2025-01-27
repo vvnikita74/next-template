@@ -1,4 +1,4 @@
-***🚀 Next.js Professional Starter Template***  
+## **🚀 Next.js Professional Starter Template**  
 *Продакшен-готовый шаблон с поддержкой legacy-браузеров и строгим кодстайлом*
 
 ---
