@@ -2,7 +2,7 @@
 
 import defaultTheme from 'tailwindcss/defaultTheme'
 
-const config = {
+export const config = {
 	theme: {
 		extend: {
 			screens: {
@@ -14,5 +14,3 @@ const config = {
 	},
 	plugins: []
 }
-
-export default config
