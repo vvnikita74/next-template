@@ -1,11 +1,8 @@
-/* eslint-disable import/no-anonymous-default-export */
-
 /** @type {import('tailwindcss').Config} */
 
 import defaultTheme from 'tailwindcss/defaultTheme'
 
-export default {
-	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+export const config = {
 	theme: {
 		extend: {
 			screens: {
