@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import {
 	fixupConfigRules,
 	fixupPluginRules
@@ -59,6 +58,21 @@ export default [
 		},
 
 		rules: {
+			// Eslint rules
+			'import/no-anonymous-default-export': [
+				'error',
+				{
+					allowArray: true,
+					allowArrowFunction: false,
+					allowAnonymousClass: false,
+					allowAnonymousFunction: false,
+					allowCallExpression: true,
+					allowNew: false,
+					allowLiteral: false,
+					allowObject: true
+				}
+			],
+
 			// React rules
 			'react/react-in-jsx-scope': 'off',
 			'react/jsx-uses-react': 'off',
