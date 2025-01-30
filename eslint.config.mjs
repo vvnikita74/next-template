@@ -62,6 +62,20 @@ export default [
 		},
 
 		rules: {
+			'import/no-anonymous-default-export': [
+				'error',
+				{
+					allowArray: true,
+					allowArrowFunction: false,
+					allowAnonymousClass: false,
+					allowAnonymousFunction: false,
+					allowCallExpression: true,
+					allowNew: false,
+					allowLiteral: false,
+					allowObject: true
+				}
+			],
+
 			'react/react-in-jsx-scope': 'off',
 			'react/jsx-uses-react': 'off',
 			'react/prop-types': 'off',
