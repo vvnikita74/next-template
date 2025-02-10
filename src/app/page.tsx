@@ -1,7 +1,6 @@
-import { revalidateTime } from 'utils/config'
 import BongIcon from 'public/bong.svg'
 
-export const revalidate = revalidateTime
+export const revalidate = 7200
 
 export default function HomePage() {
 	return (
