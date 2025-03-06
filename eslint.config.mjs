@@ -1,16 +1,16 @@
 /* eslint-disable import/no-anonymous-default-export */
 import {
-	fixupConfigRules,
-	fixupPluginRules
+    fixupConfigRules,
+    fixupPluginRules
 } from '@eslint/compat'
+import { FlatCompat } from '@eslint/eslintrc'
+import js from '@eslint/js'
+import prettier from 'eslint-plugin-prettier'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
-import prettier from 'eslint-plugin-prettier'
 import globals from 'globals'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import js from '@eslint/js'
-import { FlatCompat } from '@eslint/eslintrc'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -62,26 +62,11 @@ export default [
 		},
 
 		rules: {
-			'import/no-anonymous-default-export': [
-				'error',
-				{
-					allowArray: true,
-					allowArrowFunction: false,
-					allowAnonymousClass: false,
-					allowAnonymousFunction: false,
-					allowCallExpression: true,
-					allowNew: false,
-					allowLiteral: false,
-					allowObject: true
-				}
-			],
-
 			'react/react-in-jsx-scope': 'off',
 			'react/jsx-uses-react': 'off',
 			'react/prop-types': 'off',
 			'react-hooks/rules-of-hooks': 'error',
 			'react-hooks/exhaustive-deps': 'warn',
-
 			'react/self-closing-comp': [
 				'error',
 				{
@@ -89,25 +74,7 @@ export default [
 					html: true
 				}
 			],
-
-			'prettier/prettier': [
-				'warn',
-				{
-					tabWidth: 2,
-					useTabs: true,
-					semi: false,
-					jsxSingleQuote: true,
-					singleQuote: true,
-					arrowParens: 'avoid',
-					trailingComma: 'none',
-					endOfLine: 'auto',
-					jsxBracketSameLine: true,
-					bracketSpacing: true,
-					bracketSameLine: false,
-					printWidth: 65,
-					plugins: ['prettier-plugin-tailwindcss']
-				}
-			]
+			'prettier/prettier': 'warn'
 		}
 	},
 	{
